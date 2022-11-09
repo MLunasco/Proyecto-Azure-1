@@ -138,7 +138,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/alvaroatenciop95@21.edu.ar/TransformacionyMigracion"
+					"notebookPath": "/Users/martinlunasco@21.edu.ar/transformaciones_datalake"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
