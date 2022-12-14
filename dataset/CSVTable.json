@@ -1,6 +1,10 @@
 {
 	"name": "CSVTable",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
 		"parameters": {
 			"FileName": {
 				"type": "string"
@@ -10,12 +14,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().FileName",
-					"type": "Expression"
-				},
-				"container": "input"
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "tables"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
